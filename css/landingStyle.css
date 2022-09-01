@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, "Helcetica Neue", 
+    Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+}
+
+#showcase{
+    position: relative;
+    background-image: url('../img/BlackForest-Germany-GettyImages-147180370.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+}
+
+#showcase .button{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:rgb(246, 149, 149);
+}
+
+#showcase .button:hover{
+    background: rgb(179, 97, 97);
+    color: #fff;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+#nav{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav .logo{
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#nav .navBar a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+#nav .navBar a:not(:last-child){
+    margin-right: 30px;
+}
+
+#nav .navBar a:hover{
+    background: #fff;
+}
+
+#showcase .content{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+#showcase .content h1{
+    color: #fff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+#showcase .content p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color:aliceblue;
+}
+
+#showcase .mediaIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#showcase .mediaIcon a{
+    position: relative;
+    color:#fff;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+#showcase .mediaIcon a:not(:last-child){
+    margin-right: 60px;
+}
+
+#showcase .mediaIcon a:hover{
+    transform: scale(1.2);
+}
+
+#additional{
+    text-align: center;
+    background: rgb(28, 27, 27);
+    color:#fff;
+}
