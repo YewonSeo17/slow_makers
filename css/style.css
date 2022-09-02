@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, "Helcetica Neue", 
+    Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+}
+
+#nav .logo{
+    display: flex;
+}
