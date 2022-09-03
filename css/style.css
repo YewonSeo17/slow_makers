@@ -25,33 +25,33 @@ header{
     padding: 0 20px;
 }
 
-#nav .logo{
+.logo{
     display: flex;
 }
 
-#nav .searchBar{
-    height: 40px;
-    width: 400px;
-    border: 1px solid #000;
+.searchBar{
+    height: 20px;
+    width: 100px;
+    border: 0px;
     background: #fff;
     display: flex;
     justify-content: left;
 }
 
-input{
+.searchBar input{
     font-size: 16px;
-    width: 325px;
     padding: 10px;
     outline: none;
     float: left;
 }
 
-#searchBar button{
-    width: 50px;
+a .button{
+    width: 40px;
     height: 100%;
+    padding: 10px;
     border: 0px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     outline: none;
     float: right;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
