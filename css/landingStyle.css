@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    font-family: Arial, "Helcetica Neue", 
+    font-family: Arial, "Helcetica Neue", /*민체한테 폰트 받아야 함*/
     Helvetica, sans-serif;
     font-size: 17px;
     color: rgb(0, 0, 0);
