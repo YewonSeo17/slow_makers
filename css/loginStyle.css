@@ -4,6 +4,7 @@
     box-sizing: border-box;
     height: 100%;
     background-color: #e9e8e9;
+    color: #273169;
 }
 
 body{
@@ -48,6 +49,7 @@ header{
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  background-color: #fff;
 }
 
 #password-field{
@@ -55,6 +57,7 @@ header{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  background-color: #fff;
 }
 
 #login-form-submit{
@@ -62,6 +65,7 @@ header{
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  background-color: #fff;
 }
 
 hr{
@@ -74,7 +78,7 @@ hr{
 }
 
 hr:after{
-  background-color: #fff;
+  background-color: #e9e8e9;
   content: 'social login';
   padding: 0px 4px;
   position: relative;
