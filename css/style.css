@@ -21,12 +21,25 @@ header{
     grid-auto-columns: auto;
     justify-content: center;
     align-items: center;
-    text-align: left;
     padding: 0 20px;
 }
 
 #nav .head{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 0;
+    height: 100%;
+    padding: 30px 0px;
+    justify-content: space-between;
+}
+
+#nav .head .logo{
+    text-align: left;
+}
+
+#nav .head .button{
+    text-align: right;
 }
 
 #nav .navBar{
@@ -45,18 +58,23 @@ header{
 
 .searchBar input{
     font-size: 16px;
-    padding: 10px;
+    width: 160px;
+    padding: 0px 10px;
     outline: none;
-    float: left;
+}
+
+.searchBar i{
+    padding: 0px 5px;
 }
 
 a .button{
     width: 40px;
     height: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     border: 0px;
     background: rgb(0, 0, 0);
     outline: none;
     float: right;
     color: rgb(0, 0, 0);
+    justify-items: right;
 }
