@@ -17,16 +17,21 @@ header{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
     align-items: center;
     text-align: left;
     padding: 0 20px;
 }
 
-.logo{
+#nav .head{
     display: flex;
+}
+
+#nav .navBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .searchBar{
