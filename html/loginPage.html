@@ -11,15 +11,26 @@
 
 <body>
     <header>
-        <h1 id="login-header">Login</h1>
-        <div id="login-error-msg-holder">
-            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        <div class="head">
+            <a href = "./index.html" class = "logo"><h2>logo</h2></a>
         </div>
-        <form id="login-form">
+        <form id="loginForm">
             <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
             <input type="submit" value="Login" id="login-form-submit">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
         </form>
+        <div id="socialLogin">
+            <hr width="257.6">
+            <section class="icons">
+                <a href = "#"><span class="fa-brands fa-google"></i></a>
+                <a href = "#"><span class="fa-brands fa-facebook-f"></i></a>
+                <a href = "#"><span class="fa-brands fa-twitter"></i></a>
+                <a href = "#"><span class="fa-brands fa-instagram"></i></a>
+            </section>
+            <div class="register">
+                <a href="#">or register</a>
+            </div>
+        </div>
     </header>
 </body>
 </html>
