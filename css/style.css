@@ -81,3 +81,63 @@ a .button{
     float: right;
     color: rgb(0, 0, 0);
 }
+
+#imageSlider{
+    position: relative;
+    display: grid;
+    width: 520px;
+    overflow: hidden;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 520px);
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 325px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+
+  #slide-1:target ~ .imageContainer {
+    left: 0px;
+  }
+
+  #slide-2:target ~ .imageContainer {
+    left: -520px;
+  }
+
+  #slide-3:target ~ .imageContainer {
+    left: -1040px;
+  }
+
+  .buttons {
+    position: relative;
+    width: 520px;
+    top: -20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+  }
