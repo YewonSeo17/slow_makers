@@ -15,10 +15,14 @@ body{
 header{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 160px;
     display: grid;
     justify-content: center;
     padding: 0 20px;
+}
+
+#nav{
+    border-bottom: 1px solid #000;
 }
 
 #nav .head{
@@ -76,5 +80,4 @@ a .button{
     outline: none;
     float: right;
     color: rgb(0, 0, 0);
-    justify-items: right;
 }
