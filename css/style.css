@@ -12,6 +12,8 @@ body{
     Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.6;
+    border-radius: 500px;
+    border-color: #273169;
 }
 
 header{
@@ -24,7 +26,8 @@ header{
 }
 
 #nav{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #273169;
+    margin-bottom: 20px;
 }
 
 #nav .head{
