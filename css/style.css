@@ -52,7 +52,7 @@ header{
 #nav .navBar{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-column-gap: 50px;
+    column-gap: 50px;
     text-align: left;
 }
 
@@ -89,7 +89,17 @@ a .button{
     color: rgb(0, 0, 0);
 }
 
+#body-grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+    grid-template-areas:
+    'imageSlider imageSlider imageSlider topProjects'
+    'projects projects projects topProjects';
+}
+
 #imageSlider{
+    grid-area: imageSlider;
     position: relative;
     display: grid;
     width: 600px;
@@ -148,3 +158,11 @@ a .button{
     border-radius: 50px;
     background-color: #273169;
   }
+
+#topProjects{
+    grid-area: topProjects;
+}
+
+#projects{
+    grid-area: projects;
+}
