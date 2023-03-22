@@ -14,7 +14,7 @@ body{
     Helvetica, sans-serif;
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-items: end;
     color: black;
 }
 
@@ -24,6 +24,10 @@ header{
     display: grid;
     justify-items: center;
     align-items: center;
+    transform:scale(2.0);
+    
+    position: absolute;
+    top: 250px;
 }
 
 .head{
@@ -35,7 +39,7 @@ header{
 }
 
 #loginForm{
-  height: 90px;
+  height: 50px;
   display: grid;
   grid-template-columns: 160px 80px;
   grid-template-rows: 40px 40px;
@@ -110,6 +114,6 @@ hr:after{
 }
 
 #socialLogin .register{
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
 }
