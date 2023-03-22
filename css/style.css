@@ -6,9 +6,10 @@
     color: #273169;
 }
 
+
 body{
     margin: 0;
-    font-family: Arial, "Helcetica Neue", 
+    font-family: Arial, "Helcetica Neue",
     Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.6;
@@ -18,19 +19,13 @@ body{
 
 header{
     position: relative;
-    width: 100%;
-    height: 50%px;
+    height: 50%;
     display: grid;
     justify-content: center;
     padding: 0 20px;
 }
 
-#nav{
-    border-bottom: 1px solid #273169;
-    margin-bottom: 20px;
-}
-
-#nav .head{
+.head{
     display: grid;
     position: relative;
     top: 0;
@@ -39,14 +34,22 @@ header{
     justify-content: space-between;
 }
 
-#nav .head .logo{
+.head .logo{
     text-align: left;
     grid-row: 4/5;
 }
 
-#nav .head .button{
+.head .button{
     text-align: right;
     grid-row: 1/5;
+}
+
+#nav{
+    width: 100%;
+    border-bottom: 1px solid #273169;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #nav .navBar{
@@ -89,10 +92,13 @@ a .button{
     color: rgb(0, 0, 0);
 }
 
-#body-grid-container{
+#grid-container{
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 0px;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
     grid-template-areas:
     'imageSlider imageSlider imageSlider topProjects'
     'projects projects projects topProjects';
@@ -114,7 +120,7 @@ a .button{
     grid-template-columns: repeat(3, 600px);
     justify-content: center;
     align-items: center;
-    background-color: pink;
+    background-color: #e9e8e9;
     height: 100%;
     clear: both;
     position: relative;
@@ -165,4 +171,32 @@ a .button{
 
 #projects{
     grid-area: projects;
+    display: grid;
+    grid-template-areas:
+    'project1 project2 project3'
+    'project4 project5 project6';
 }
+
+ .project1-image{
+    grid-area: project1;
+ }
+
+ .project2-image{
+    grid-area: project2;
+ }
+
+ .project3-image{
+    grid-area: project3;
+ }
+
+ .project4-image{
+    grid-area: project4;
+ }
+
+ .project5-image{
+    grid-area: project5;
+ }
+
+ .project6-image{
+    grid-area: project6;
+ }
