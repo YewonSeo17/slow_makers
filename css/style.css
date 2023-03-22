@@ -19,7 +19,7 @@ body{
 header{
     position: relative;
     width: 100%;
-    height: 160px;
+    height: 50%px;
     display: grid;
     justify-content: center;
     padding: 0 20px;
@@ -32,10 +32,9 @@ header{
 
 #nav .head{
     display: grid;
-    grid-template-columns: 100px 40px;
     position: relative;
     top: 0;
-    height: 100px;
+    height: 70%;
     padding: 30px 0px;
     justify-content: space-between;
 }
@@ -52,13 +51,14 @@ header{
 
 #nav .navBar{
     display: grid;
-    grid-template-columns: 60px 60px 60px 60px 80px 200px;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 50px;
     text-align: left;
 }
 
 .searchBar{
     height: 20px;
-    width: 100px;
+    width: 100%;
     border: 0px;
     background: #fff;
     display: flex;
@@ -67,7 +67,7 @@ header{
 
 .searchBar input{
     font-size: 15px;
-    width: 170px;
+    width: 100%;
     padding: 0px 10px;
     outline: none;
     border: 1px solid #273169;
@@ -92,7 +92,7 @@ a .button{
 #imageSlider{
     position: relative;
     display: grid;
-    width: 520px;
+    width: 600px;
     overflow: hidden;
     align-items: center;
     margin-left: auto;
@@ -101,11 +101,11 @@ a .button{
 
 .imageContainer {
     display: grid;
-    grid-template-columns: repeat(3, 520px);
+    grid-template-columns: repeat(3, 600px);
     justify-content: center;
     align-items: center;
     background-color: pink;
-    height: 325px;
+    height: 100%;
     clear: both;
     position: relative;
     -webkit-transition: left 2s;
@@ -126,16 +126,16 @@ a .button{
   }
 
   #slide-2:target ~ .imageContainer {
-    left: -520px;
+    left: -600px;
   }
 
   #slide-3:target ~ .imageContainer {
-    left: -1040px;
+    left: -1200px;
   }
 
   .buttons {
     position: relative;
-    width: 520px;
+    width: 600px;
     top: -20px;
     align-items: center;
     text-align: center;
